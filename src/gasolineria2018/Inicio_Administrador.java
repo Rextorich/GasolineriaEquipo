@@ -51,7 +51,7 @@ public class Inicio_Administrador extends javax.swing.JFrame {
         jButton2.setText("Entregas");
 
         jButton3.setFont(new java.awt.Font("Andalus", 1, 14)); // NOI18N
-        jButton3.setText("Empleados");
+        jButton3.setText("Contabilidad");
 
         jButton4.setFont(new java.awt.Font("Andalus", 1, 14)); // NOI18N
         jButton4.setText("Clientes");
@@ -66,7 +66,7 @@ public class Inicio_Administrador extends javax.swing.JFrame {
         jButton7.setText("Reportes");
 
         jButton8.setFont(new java.awt.Font("Andalus", 1, 14)); // NOI18N
-        jButton8.setText("Reportes");
+        jButton8.setText("Complementos");
 
         jButton9.setFont(new java.awt.Font("Andalus", 1, 14)); // NOI18N
         jButton9.setText("Salir");
