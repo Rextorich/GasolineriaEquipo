@@ -52,6 +52,7 @@ public class Factura extends javax.swing.JFrame {
         jLabel_IVA = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        jComboBox1 = new javax.swing.JComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -180,7 +181,7 @@ public class Factura extends javax.swing.JFrame {
 
         jComboBox_Productos.setEditable(true);
         jComboBox_Productos.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        jComboBox_Productos.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Seleccionar.....", "Arroz", "Leche", "Queso", "Embutidos", "Papel", "Alcohol", "Agua", "Gaseosa" }));
+        jComboBox_Productos.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Seleccionar.....", "Extra", "Super", "Diesel" }));
 
         jTextField_Precio.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         jTextField_Precio.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -229,6 +230,8 @@ public class Factura extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(jTable1);
 
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "gal", "US" }));
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -236,7 +239,7 @@ public class Factura extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap(55, Short.MAX_VALUE)
+                        .addContainerGap(30, Short.MAX_VALUE)
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jComboBox_Productos, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -246,11 +249,13 @@ public class Factura extends javax.swing.JFrame {
                         .addComponent(jTextField_Precio, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(10, 10, 10)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                                 .addComponent(jTextField_Cantidad, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
+                                .addGap(26, 26, 26)
                                 .addComponent(jButton_Agregar)
                                 .addGap(18, 18, 18)
                                 .addComponent(jButton_Eliminar))
@@ -284,7 +289,8 @@ public class Factura extends javax.swing.JFrame {
                     .addComponent(jButton_Agregar)
                     .addComponent(jComboBox_Productos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField_Precio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField_Cantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField_Cantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -397,6 +403,7 @@ public class Factura extends javax.swing.JFrame {
     private javax.swing.JButton jButton_Agregar;
     private javax.swing.JButton jButton_Eliminar;
     private javax.swing.JButton jButton_Nuevo;
+    private javax.swing.JComboBox jComboBox1;
     private javax.swing.JComboBox jComboBox_Productos;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
