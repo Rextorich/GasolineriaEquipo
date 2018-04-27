@@ -46,9 +46,17 @@ public class Depositos_Combustibles extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jTextField8 = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
+        jButton_Nuevo = new javax.swing.JButton();
+        jButton_Guardar = new javax.swing.JButton();
+        jButton_Actualizar = new javax.swing.JButton();
+        jButton_Borrar = new javax.swing.JButton();
+        jButton_Cancelar = new javax.swing.JButton();
+        jButton_Salir = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTable3 = new javax.swing.JTable();
+        jLabel10 = new javax.swing.JLabel();
+        jTextField_BuscarPlaca = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -104,7 +112,41 @@ public class Depositos_Combustibles extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 0, 200, 290));
+
+        jButton_Nuevo.setText("Nuevo");
+        jButton_Nuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_NuevoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton_Nuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 80, -1));
+
+        jButton_Guardar.setText("Guardar");
+        jButton_Guardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_GuardarActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton_Guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 80, -1));
+
+        jButton_Actualizar.setText("Actualizar");
+        jButton_Actualizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton_ActualizarActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton_Actualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
+
+        jButton_Borrar.setText("Borrar");
+        jPanel2.add(jButton_Borrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 150, 80, -1));
+
+        jButton_Cancelar.setText("Cancelar");
+        jPanel2.add(jButton_Cancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 190, 80, -1));
+
+        jButton_Salir.setText("Salir");
+        jPanel2.add(jButton_Salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 230, 80, -1));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 0, 140, 290));
 
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -121,12 +163,46 @@ public class Depositos_Combustibles extends javax.swing.JFrame {
         ));
         jScrollPane3.setViewportView(jTable3);
 
-        jPanel3.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 656, 118));
+        jPanel3.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 660, 100));
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, -1, -1));
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel10.setText("Buscar Por Id Deposito:");
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, 20));
+
+        jTextField_BuscarPlaca.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField_BuscarPlacaKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jTextField_BuscarPlacaKeyReleased(evt);
+            }
+        });
+        jPanel3.add(jTextField_BuscarPlaca, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, 120, -1));
+
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 680, 150));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton_NuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_NuevoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton_NuevoActionPerformed
+
+    private void jButton_GuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_GuardarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton_GuardarActionPerformed
+
+    private void jButton_ActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton_ActualizarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton_ActualizarActionPerformed
+
+    private void jTextField_BuscarPlacaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_BuscarPlacaKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField_BuscarPlacaKeyPressed
+
+    private void jTextField_BuscarPlacaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField_BuscarPlacaKeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField_BuscarPlacaKeyReleased
 
     /**
      * @param args the command line arguments
@@ -164,7 +240,14 @@ public class Depositos_Combustibles extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton_Actualizar;
+    private javax.swing.JButton jButton_Borrar;
+    private javax.swing.JButton jButton_Cancelar;
+    private javax.swing.JButton jButton_Guardar;
+    private javax.swing.JButton jButton_Nuevo;
+    private javax.swing.JButton jButton_Salir;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -186,5 +269,6 @@ public class Depositos_Combustibles extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField_BuscarPlaca;
     // End of variables declaration//GEN-END:variables
 }
